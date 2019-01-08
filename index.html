@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div class="score">
+      <div id="computer_score">0</div>|
+      <div id="player_score">0</div>
+    </div>
+    <div class="main">
+      <div>
+        <img src="rock.jpg" alt="rock" class="symbol" id="rock" onclick="setPlayerMove(event)">
+      </div>
+      <div>
+        <img src="paper.jpg" alt="paper" class="symbol" id="paper" onclick="setPlayerMove(event)">
+      </div>
+      <div>
+        <img src="scissor.jpg" alt="scissor" class="symbol" id="scissor" onclick="setPlayerMove(event)">
+      </div>
+    </div>
+    <div id="result" class="result">
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

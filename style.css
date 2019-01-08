@@ -1,0 +1,42 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: darkslategray;
+}
+
+.main{
+  display:flex;
+  justify-content: center;
+}
+
+.symbol{
+  margin-top:50px;
+  margin-left: 15px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 100px;
+}
+
+.score{
+  margin-top: 20px;
+  margin-left: 290px;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  width: 200px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+.result{
+  margin-top:50px;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
