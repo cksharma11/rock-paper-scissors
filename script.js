@@ -29,7 +29,8 @@ const getComputerMove = function() {
   return moves[index];
 };
 
-const setPlayerMove = function(event) {
+const startGame = function(event) {
+  document.getElementById(event.target.id).style.border = '2px solid blue';
   const playerMove = event.target.id;
   const computerMove = getComputerMove();
   checkWinConditions(computerMove, playerMove);
