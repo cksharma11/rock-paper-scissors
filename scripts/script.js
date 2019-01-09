@@ -13,9 +13,7 @@ const winningComditions = [
 ];
 
 const hasWon = function(computerMove, playersMove) {
-  console.log(computerMove, playersMove);
   return winningComditions.some(condition => {
-    console.log(playersMove == condition[0] && computerMove == condition[1]);
     return computerMove == condition[0] && playersMove == condition[1];
   });
 };
