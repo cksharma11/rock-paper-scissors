@@ -8,8 +8,8 @@ let computerWinCount = 0;
 
 const winningComditions = [
   ['rock', 'scissor'],
-  ['papper', 'rock'],
-  ['scissor', 'papper']
+  ['paper', 'rock'],
+  ['scissor', 'paper']
 ];
 
 const hasWon = function(computerMove, playersMove) {
