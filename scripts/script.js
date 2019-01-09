@@ -34,7 +34,7 @@ const getComputerMove = function() {
   return moves[index];
 };
 
-const startGame = function(event) {
+const startGame = function() {
   const playerMove = event.target.id;
   const computerMove = getComputerMove();
   checkWinConditions(computerMove, playerMove);
@@ -72,3 +72,10 @@ const checkWinConditions = function(computerMove, playerMove) {
   }
   return handlePlayerWin(resultBox, computerMove, playerMove);
 };
+
+const setOnClickListners = function() {
+  const main = document.getElementById('main');
+  main.onclick = startGame;
+};
+
+window.onload = setOnClickListners;
