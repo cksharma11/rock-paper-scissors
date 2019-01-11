@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Courier New', Courier, monospace;
   width: 60%;
   margin-left: 20%;
@@ -6,22 +6,21 @@ body{
   background-color: darkslategray;
 }
 
-.main{
-  display:flex;
+.main {
+  display: flex;
   justify-content: center;
 }
 
-.symbol{
-  margin-top:50px;
-  margin-left: 15px;
+.symbol {
+  margin-left: 50px;
   width: 100px;
   height: 100px;
   padding: 10px;
-  border: 1px solid white;
+  border: 2px solid orangered;
   border-radius: 100px;
 }
 
-.score{
+.score {
   margin-top: 20px;
   margin-left: 290px;
   border-radius: 5px;
@@ -33,10 +32,17 @@ body{
   color: white;
   border: 1px solid white;
 }
-.result{
-  margin-top:50px;
+.result {
+  margin-top: 50px;
   font-size: 50px;
   width: 100%;
   text-align: center;
   color: white;
+}
+.take_your_turn {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  color: grey;
+  padding: 10px;
 }
