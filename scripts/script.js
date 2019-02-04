@@ -48,7 +48,7 @@ const updateScore = function() {
   computerScoreBox.innerText = winCounts.computerWinCount;
 };
 
-const handleCompuerWin = function(resultBox, computerMove, playerMove) {
+const handleComputerWin = function(resultBox, computerMove, playerMove) {
   winCounts.computerWinCount++;
   return (resultBox.innerText = `Your move ${playerMove} Computer's move ${computerMove} Computer Won!`);
 };
@@ -68,7 +68,7 @@ const checkWinConditions = function(computerMove, playerMove) {
     return handleDraw(resultBox, computerMove, playerMove);
   }
   if (isComputerWon(computerMove, playerMove)) {
-    return handleCompuerWin(resultBox, computerMove, playerMove);
+    return handleComputerWin(resultBox, computerMove, playerMove);
   }
   return handlePlayerWin(resultBox, computerMove, playerMove);
 };
