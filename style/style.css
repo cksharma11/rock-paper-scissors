@@ -18,11 +18,12 @@ body {
   padding: 10px;
   border: 2px solid orangered;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 .score {
   margin-top: 20px;
-  margin-left: 290px;
+  margin-left: 38%;
   border-radius: 5px;
   justify-content: center;
   display: flex;

@@ -50,15 +50,18 @@ const updateScore = function() {
 
 const handleComputerWin = function(resultBox, computerMove, playerMove) {
   winCounts.computerWinCount++;
+  resultBox.style.color = 'red';
   return (resultBox.innerText = `Your move ${playerMove} Computer's move ${computerMove} Computer Won!`);
 };
 
 const handlePlayerWin = function(resultBox, computerMove, playerMove) {
   winCounts.playerWinCount++;
+  resultBox.style.color = 'green';
   return (resultBox.innerText = `Your move ${playerMove} Computer's move ${computerMove} You Won!`);
 };
 
 const handleDraw = function(resultBox, computerMove, playerMove) {
+  resultBox.style.color = 'white';
   return (resultBox.innerText = `Your move ${playerMove} Computer's move ${computerMove} Draw!`);
 };
 
